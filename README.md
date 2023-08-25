@@ -24,6 +24,8 @@
       - 시간 : Seoul
       - 키보드 : Korean
       - Wifi setting
+      - 모니터 화면비율설정
+         * 라즈베리파이 아이콘 -> 기본설정 -> Raspberry pi Configuration -> Display tab -> Headless Resoluton 을 720x480으로 변경
   9. 업데이트를 진행
       - **(생각보다 시간이 걸리기 때문에 이 시간에 맞춰서 뭔가 이론 수업을 진행하는게 어떨지)**
   10. 재시작 
@@ -42,6 +44,14 @@
        sudo usermod -a -G gpio <username>```
      - 4번 핀과 GND에 LED를 연결한다. 
      - [python blink 코드작성](https://www.raspberrypi.com/documentation/computers/raspberry-pi.html#led)
+
+
+### 고려사항   
+- 웹 브라우징으 하면서 컴퓨터가 멈추는 현상을 어떻게 해결할 것인가
+- 하드웨어를 제어할 때 어떠한 라이브리를 참고 할 것인가
+* 네이티브 파이썬을 사용할 것인가 아니면 Circuitpython을 사용할 것인가. 
+
+Adadruit library를 쓸려면 Blinka를 설치해야한다. 
 
 
 
